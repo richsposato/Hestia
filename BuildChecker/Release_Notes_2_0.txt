@@ -4,7 +4,7 @@ Copyright (c) 2009 by Rich Sposato
 
 Release Date: 2009-Jan-5
 
-Home Page: http://sourceforge.net/projects/Hestia/
+Home Page: https://github.com/richsposato/Hestia
 
 
 Release Contents: 12 files

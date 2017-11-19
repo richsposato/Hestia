@@ -4,7 +4,7 @@ by Rich Sposato
 
 Release Date: 2009-Sept-22
 
-Home Page: http://sourceforge.net/projects/Hestia/
+Home Page: https://github.com/richsposato/Hestia
 
 
 
@@ -19,7 +19,7 @@ Release Contents: 5 files
 
 
 
-Design Considerations for C++ Unit Test library:
+Design Considerations for C++ Dump library:
 1. Simple	Library should be easy to compile, and easy to setup within a host
 		program.  New users should be able to learn how to use library quickly.
 2. Small        Library should have as tiny a memory footprint as possible.
