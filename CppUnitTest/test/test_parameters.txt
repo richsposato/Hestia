@@ -1,0 +1,46 @@
+// $Header: /cvsroot/cppunittest/CppUnitTest/test/test_parameters.txt,v 1.4 2007/07/17 23:56:35 rich_sposato Exp $
+
+Various collections of command line arguments which I use with the Unit Test program.
+
+Show help:
+	-?
+	--help
+
+Invalid combinations of command line arguments:
+	-f -p
+	-f -z
+	-r -z
+	-? -f
+	-? -o:Ds
+
+Standard test:
+	-o:DS
+
+Standard test with output also sent to files.
+	-o:dhmtwS -t:Thingy_UnitTest -h:Thingy_UnitTest -x:Thingy_UnitTest
+
+Fatal exception test:
+	-f -o:DS
+
+Fatal exception test where unit-tester remains alive at exit time:
+	-f -o:DS -h:Thingy_UnitTest -x:Thingy_UnitTest -L
+
+Send to standard error instead of standard out:
+	-o:dhmtwE
+
+Assertion test:
+	-o:DS -a
+
+Show passing tests too:
+	-o:dhmtwpS
+
+// $Log: test_parameters.txt,v $
+// Revision 1.4  2007/07/17 23:56:35  rich_sposato
+// Added ability to do unit tests safely at exit time.
+//
+// Revision 1.3  2007/07/17 22:58:13  rich_sposato
+// Moved sendToCerr & sendToCout into OutputOptions enum family.
+//
+// Revision 1.2  2007/07/17 21:47:51  rich_sposato
+// Added CVS keywords.
+//

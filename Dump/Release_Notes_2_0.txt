@@ -1,0 +1,36 @@
+Dump Library v2.0
+
+by Rich Sposato
+
+Release Date: 2009-Sept-22
+
+Home Page: http://sourceforge.net/projects/Hestia/
+
+
+
+Release Contents: 5 files
+./Release_Notes_2_0.txt		The file containing these release notes.
+./Dump_MSVC_9.vcproj		MS Visual Studio 9.0 project file for library.
+./Dump.hpp					Header file for Dump library.
+./Dump.cpp					Source file for Dump library.
+./DumpTest/main.cpp			Test program as example.
+./DumpTest/DumpTest.vcproj	Test project for demonstrating how to use Dump library.
+
+
+
+
+Design Considerations for C++ Unit Test library:
+1. Simple	Library should be easy to compile, and easy to setup within a host
+		program.  New users should be able to learn how to use library quickly.
+2. Small        Library should have as tiny a memory footprint as possible.
+3. Efficient    Big-O complexity of each function should be as small as possible.
+4. Polite	Imposes as few as possible requirements on host program.
+
+
+Changes Since Last Release:
+1. SetupForDump function no longer requires specific information such as
+   build type, version string, or build number.
+2. Modified SetupForDump function so client code can pass in any number of
+   keys and values.
+3. SetupForDump allows client code to specify location to place dump file
+   instead of using default location.

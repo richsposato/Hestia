@@ -1,0 +1,45 @@
+Automated Build Checker (abc) v2.0
+
+Copyright (c) 2009 by Rich Sposato
+
+Release Date: 2009-Jan-5
+
+Home Page: http://sourceforge.net/projects/Hestia/
+
+
+Release Contents: 12 files
+./abc_MSVC_9.sln	MS Visual Studio 9 Solution file.
+./abc_MSVC_9.vcproj	MS Visual Studio 9 Project file.
+./main.cpp		Main source code file.
+./command.cpp		Has functions to process command line options, or get config file info.
+./command.hpp		Defines class to store command line parameters.
+./matchers.cpp		Has functions used to match compiler results.
+./matchers.hpp		Defines classes which match compiler results.
+./outputters.cpp	Has functions to prepare and send output to files.
+./outputters.hpp	Defines classes which prepare and send output to files.
+./utility.cpp		Has various helper functions.
+./utility.hpp		Declares various helper functions.
+./Release_Notes_2_0.txt	The file containing these notes.
+./BuildChecker.cbp	Code::Blocks project file.
+
+
+Initial Release of Automated Build Checker.
+
+ABC was designed to parse the output files from Visual Studio and summarize the results of the build process
+in an HTML file.  It maintains records of previous build results in an HTML table so programmers can see how
+well the build process has done in the past.  The intent is so programmers can display build results online
+or at least in an internal webpage so everyone can see if any project failed and why.
+
+
+Changes from verson 1:
+1. Recognizes results from more compilers.
+2. You can now specify options in a config file.
+3. You can now specify custom rules for matching result files.
+4. Comes with Code::Blocks project file.
+5. You can now specify more options (colors, title, etc...).
+
+
+Notes:
+1. If you want to use a config file, then you must get the UtilParsers library and compile either the
+   Debug_w_IniFile or Release_w_IniFile configurations.
+2. This project compiles with both GCC and with Visual Studio 9.
